@@ -1,0 +1,16 @@
+
+# Remove no needed directories
+remove_path(FILES_CPP /examples/)
+remove_path(FILES_H /examples/)
+
+remove_path(FILES_CPP /examples_linux/)
+remove_path(FILES_H /examples_linux/)
+
+remove_path(FILES_CPP /tests/)
+remove_path(FILES_H /tests/)
+
+remove_path(FILES_CPP /pyRF24/)
+remove_path(FILES_H /pyRF24/)
+
+remove_path(FILES_CPP /utility/)
+remove_path(FILES_H /utility/)
