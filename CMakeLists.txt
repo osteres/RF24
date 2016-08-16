@@ -6,15 +6,15 @@ include(./cmake/functions.txt)
 set(NAME RF24)
 
 # Files
-file(GLOB_RECURSE FILES_CPP "*.cpp")
-file(GLOB_RECURSE FILES_H "*.h")
+file(GLOB_RECURSE ${NAME}_FILES_CPP "*.cpp")
+file(GLOB_RECURSE ${NAME}_FILES_H "*.h")
 
 # Ignore some files
 include(./cmake/ignore.txt)
 
 # Define library
 project("lib${NAME}")
-add_library(${NAME} ${FILES_CPP} ${FILES_H})
+add_library(${NAME} ${${NAME}_FILES_CPP} ${${NAME}_FILES_H})
 
 # Compiler
 set_property(TARGET ${NAME} PROPERTY CXX_STANDARD 11)
